@@ -94,11 +94,11 @@ const yearsUntilRetirement = function (birthYear, firstName) {
     if (retirement > 0) {
         console.log(`${firstName} retires in ${retirement} years.`);
         return retirement;                                  //return exits the funtion so clg has to come first
-    } else {
+    } 
+    // else {
         console.log(`${firstName} has already retired.`);
         return -1;
-    }
+    // }
 }
-
 console.log(yearsUntilRetirement(1986, "Eve"));
 console.log(yearsUntilRetirement(1940, "Helga"));

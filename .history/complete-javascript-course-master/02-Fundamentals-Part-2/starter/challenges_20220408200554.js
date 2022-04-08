@@ -30,9 +30,8 @@ Apply this to the team's average scores
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-//Test 1
-let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(65, 54, 49);
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
 console.log(scoreDolphins, scoreKoalas);
 
 const checkWinner = function (scoreDolphins, scoreKoalas) {
@@ -40,14 +39,7 @@ const checkWinner = function (scoreDolphins, scoreKoalas) {
         console.log(`Dolphins win (${scoreDolphins} vs. ${scoreKoalas})`);
     } else if (scoreKoalas >= 2 * scoreDolphins){
         console.log(`Koalas win (${scoreKoalas} vs. ${scoreDolphins})`);
-    } else {
-        console.log("No team wins");
     }
 }
-checkWinner(scoreDolphins, scoreKoalas);
-checkWinner(150, 65);
-
-scoreDolphins = calcAverage(85, 54, 41);
-scoreKoalas = calcAverage(23, 34, 27);
-console.log(scoreDolphins, scoreKoalas);
+// console.log(checkWinner());
 checkWinner(scoreDolphins, scoreKoalas);
