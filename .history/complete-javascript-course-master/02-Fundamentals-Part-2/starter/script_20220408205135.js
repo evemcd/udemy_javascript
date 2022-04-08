@@ -112,7 +112,7 @@ const friend3 = "Peter";
 const friends = ["Michael", "Steven", "Peter"];
 console.log(friends);
 
-const dates = new Array(1991, 1986, 2008, 2020);        //different way of creating an array with array function
+const years = new Array(1991, 1986, 2008, 2020);        //different way of creating an array with array function
 
 console.log(friends[0]);                                //logs the first element in the array
 console.log(friends[2]);
@@ -127,16 +127,3 @@ const eve = [firstName, "McDermott", 2022 - 1986, friends];     //different kind
 console.log(eve);
 console.log(eve.length);
 
-//exercise
-const calcAge = function (birthYear) {
-    return 2022 - birthYear;
-}
-const years = [1990, 1967, 2002, 2010, 2018];
-
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1, age2, age3);
-
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
-console.log(ages);
