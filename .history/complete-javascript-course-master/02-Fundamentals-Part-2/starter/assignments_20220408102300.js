@@ -39,9 +39,6 @@ console.log(percentageIreland1, percentageGermany1, percentagePortugal1);
 
 //assignment 4 functions calling other functions
 const describePopulation = function (country, population) {
-    const percentageCountry = percentageOfWorld1(population);
-    return `${country} has ${population} million people, which is about ${percentageCountry}% of the world.`;
+    const percentageGermany3 = percentageOfWorld1
+    return `${country} has ${population} million people, which is about ${percentageGermany3}% of the world.`
 }
-console.log(describePopulation("Ireland", 6));
-console.log(describePopulation("Germany", 82));
-console.log(describePopulation("Portugal", 10));
