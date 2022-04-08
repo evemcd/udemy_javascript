@@ -36,16 +36,13 @@ console.log(appleOrangeJuice);
 
 //function declarations vs expressions
 //parameter is the placeholder in the function, argument is the actual value when the function is called
-//function declaration - can be called before they're defined in the code
+//function declaration
 function calcAge1(birthYear) {
     return 2022 - birthYear;
 }
 
 const age1 = calcAge1(1986);
+console.log(age1);
 
-//function expression (anonymous function) - functions are values and can be stored in a variable
-const calcAge2 = function (birthYear) {
-    return 2022 - birthYear;
-}
-const age2 = calcAge2(1986);
-console.log(age1, age2);
+//function expression
+function 

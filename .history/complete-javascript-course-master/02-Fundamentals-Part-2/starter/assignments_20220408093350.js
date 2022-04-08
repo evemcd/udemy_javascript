@@ -15,17 +15,9 @@ console.log(infoIreland, infoGermany, infoPortugal);
 
 //assignment 2 function declarations vs expressions
 function percentageOfWorld1(population) {
-    return population / 7900 * 100;
+    return population / 7900 * 100
 }
 const percentageIreland = percentageOfWorld1(6);
 const percentageGermany = percentageOfWorld1(82);
 const percentagePortugal = percentageOfWorld1(10);
 console.log(percentageIreland, percentageGermany, percentagePortugal);
-
-const percentageOfWorld2 = function (population) {
-    return population / 7900 * 100;
-}
-const percentageIreland1 = percentageOfWorld2(6);
-const percentageGermany1 = percentageOfWorld2(82);
-const percentagePortugal1 = percentageOfWorld2(10);
-console.log(percentageIreland1, percentageGermany1, percentagePortugal1);
