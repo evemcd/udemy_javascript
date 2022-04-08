@@ -91,13 +91,7 @@ const calcAge = function (birthYear) {
 const yearsUntilRetirement = function (birthYear, firstName) {
     const age = calcAge(birthYear);
     const retirement = 65 - age;
-    if (retirement > 0) {
-        console.log(`${firstName} retires in ${retirement} years.`);
-        return retirement;                                  //return exits the funtion so clg has to come first
-    } else {
-        console.log(`${firstName} has already retired.`);
-        return -1;
-    }
+    // return retirement;
+    return `${firstName} retires in ${retirement} years.`
 }
-console.log(yearsUntilRetirement(1986, "Eve"));
-console.log(yearsUntilRetirement(1940, "Helga"));
+yearsUntilRetirement(1986, "Eve");
