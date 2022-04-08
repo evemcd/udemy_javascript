@@ -56,11 +56,9 @@ const calcAge3 = birthYear => 2022 - birthYear;
 const age3 = calcAge3(1986);
 console.log(age3);
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-    const age = 2022 - birthYear;
+const yearsUntilRetirement = (birthYear,  => {
+    const age = 2022 - 1986;
     const retirement = 65 - age;
-    // return retirement;
-    return `${firstName} retires in ${retirement} years.`
+    return retirement;
 }
-console.log(yearsUntilRetirement(1986, "Eve"));
-console.log(yearsUntilRetirement(1962, "Olaf"));
+console.log(yearsUntilRetirement(1986));
