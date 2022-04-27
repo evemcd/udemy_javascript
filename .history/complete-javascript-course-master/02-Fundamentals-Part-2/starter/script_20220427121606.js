@@ -101,6 +101,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement(1986, "Eve"));
 console.log(yearsUntilRetirement(1940, "Helga"));
+*/
 
 
 //introduction to arrays
@@ -139,31 +140,6 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
-*/
 
 
 //Basic Array Operations (Methods)
-const friends = ["Michael", "Steven", "Peter"];
-const newLength = friends.push('Jay');                          //adds an element to the end of the array. push is a method
-console.log(friends);
-console.log(newLength);
-
-friends.unshift('John');                                        //adds John to the beginning of the array
-console.log(friends);
-
-friends.pop();                                                  //removes the last element
-const popped = friends.pop();
-console.log(friends);
-console.log(popped);
-
-friends.shift();                                                //removes first element
-console.log(friends);
-
-console.log(friends.indexOf('Steven'));                         //returns the index of 'Steven'
-console.log(friends.includes('Steven'));                        //returns boolean value if it includes the element 'Steven'. works with strict comparison, no type coersion
-
-if (friends.includes('Peter')) {
-    console.log('You have a friend called Peter.');
-} else {
-    console.log("You don't have a friend called Peter");
-}

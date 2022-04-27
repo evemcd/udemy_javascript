@@ -156,14 +156,4 @@ const popped = friends.pop();
 console.log(friends);
 console.log(popped);
 
-friends.shift();                                                //removes first element
-console.log(friends);
-
-console.log(friends.indexOf('Steven'));                         //returns the index of 'Steven'
-console.log(friends.includes('Steven'));                        //returns boolean value if it includes the element 'Steven'. works with strict comparison, no type coersion
-
-if (friends.includes('Peter')) {
-    console.log('You have a friend called Peter.');
-} else {
-    console.log("You don't have a friend called Peter");
-}
+friends.shift();                                              //remov

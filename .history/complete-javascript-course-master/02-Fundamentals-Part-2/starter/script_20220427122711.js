@@ -164,6 +164,4 @@ console.log(friends.includes('Steven'));                        //returns boolea
 
 if (friends.includes('Peter')) {
     console.log('You have a friend called Peter.');
-} else {
-    console.log("You don't have a friend called Peter");
 }
