@@ -76,5 +76,3 @@ const myCountry = {
     population: 82,
     neighbours: ['Switzerland', 'France', 'Denmark', 'Austria', 'Belgium', 'Poland', 'Czech Republic', 'Luxembourg', 'Netherlands']
 };
-
-console.log(myCountry);

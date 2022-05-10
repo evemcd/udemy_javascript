@@ -53,3 +53,14 @@ console.log(populations.length === 4);
 
 const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
 console.log(percentages);
+
+//assignment 6 basic array operations
+const neighboursGermany = ['Switzerland', 'France', 'Denmark', 'Austria', 'Belgium', 'Poland', 'Czech Republic', 'Luxembourg', 'Netherlands'];
+neighboursGermany.push('Utopia');
+console.log(neighboursGermany);
+neighboursGermany.pop();
+console.log(neighboursGermany);
+
+if(neighboursGermany.includes('Germany')) {
+    console.log('Germany is not a neighbouring country.');
+}

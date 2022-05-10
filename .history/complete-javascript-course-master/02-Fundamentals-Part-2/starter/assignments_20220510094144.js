@@ -56,25 +56,3 @@ console.log(percentages);
 
 //assignment 6 basic array operations
 const neighboursGermany = ['Switzerland', 'France', 'Denmark', 'Austria', 'Belgium', 'Poland', 'Czech Republic', 'Luxembourg', 'Netherlands'];
-neighboursGermany.push('Utopia');
-console.log(neighboursGermany);
-neighboursGermany.pop();
-console.log(neighboursGermany);
-
-if(!neighboursGermany.includes('Germany')) {
-    console.log('Germany is not a neighbouring country.');
-}
-
-neighboursGermany[neighboursGermany.indexOf('Luxembourg')] = 'lovely Luxembourg';
-console.log(neighboursGermany);
-
-//assignment 7 introduction to objects
-const myCountry = {
-    country: 'Germany',
-    capital: 'Berlin',
-    language: 'German',
-    population: 82,
-    neighbours: ['Switzerland', 'France', 'Denmark', 'Austria', 'Belgium', 'Poland', 'Czech Republic', 'Luxembourg', 'Netherlands']
-};
-
-console.log(myCountry);

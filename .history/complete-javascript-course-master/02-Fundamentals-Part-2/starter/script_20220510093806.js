@@ -188,3 +188,5 @@ const eve = {                       //object
     friends: ['Andrea', 'Tanja', 'Kiri']    //this object has 5 properties
 }
 
+
+//Dot vs Bracket Notation
