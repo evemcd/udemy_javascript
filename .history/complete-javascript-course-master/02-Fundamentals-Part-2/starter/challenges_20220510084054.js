@@ -93,9 +93,9 @@ const tips = [
 console.log(tips);
 
 const totals = [
-    bills[0] + tips[0],
-    bills[1] + tips[1],
-    bills[2] + tips[2]
+    (calcTip(bills[0]) + bill),
+    (calcTip(bills[1]) + bill),
+    (calcTip(bills[2]) + bill)
 ]
 
 console.log(totals);

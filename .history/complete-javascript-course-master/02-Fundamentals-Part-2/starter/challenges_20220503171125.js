@@ -74,14 +74,13 @@ values (so don't store the tip values in separate variables first, but right in 
 array)
 */
 
-
-const calcTip = function(bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
-
-//arrow function: const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-
 const bills = [125, 555, 44];
+let billValue;
+
+const calcTip = function (billValue) {
+    const tip = billValue * 0.15;
+    return tip;
+}
 
 console.log(calcTip(100));
 
@@ -90,12 +89,11 @@ const tips = [
     calcTip(bills[1]),
     calcTip(bills[2])
 ];
+
 console.log(tips);
 
-const totals = [
-    bills[0] + tips[0],
-    bills[1] + tips[1],
-    bills[2] + tips[2]
+const total = [
+    (calcTip(bills[0]) + billValue),
+    (calcTip(bills[1])),
+    (calcTip(bills[2]))
 ]
-
-console.log(totals);
