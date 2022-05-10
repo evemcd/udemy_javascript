@@ -101,7 +101,6 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement(1986, "Eve"));
 console.log(yearsUntilRetirement(1940, "Helga"));
-*/
 
 
 //introduction to arrays
@@ -112,7 +111,7 @@ const friend3 = "Peter";
 const friends = ["Michael", "Steven", "Peter"];
 console.log(friends);
 
-const years = new Array(1991, 1986, 2008, 2020);        //different way of creating an array with array function
+const dates = new Array(1991, 1986, 2008, 2020);        //different way of creating an array with array function
 
 console.log(friends[0]);                                //logs the first element in the array
 console.log(friends[2]);
@@ -120,3 +119,72 @@ console.log(friends.length);                            //logs the amount of ele
 console.log(friends[friends.length - 1]);               //gets the last element in the array
 
 friends[2] = "Jay";                                     //replacing element at index 2
+console.log(friends);
+
+const firstName = "Eve"
+const eve = [firstName, "McDermott", 2022 - 1986, friends];     //different kinds of elements can go into an array
+console.log(eve);
+console.log(eve.length);
+
+//exercise
+const calcAge = function (birthYear) {
+    return 2022 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
+
+
+//Basic Array Operations (Methods)
+const friends = ["Michael", "Steven", "Peter"];
+const newLength = friends.push('Jay');                          //adds an element to the end of the array. push is a method
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');                                        //adds John to the beginning of the array
+console.log(friends);
+
+friends.pop();                                                  //removes the last element
+const popped = friends.pop();
+console.log(friends);
+console.log(popped);
+
+friends.shift();                                                //removes first element
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));                         //returns the index of 'Steven'
+console.log(friends.includes('Steven'));                        //returns boolean value if it includes the element 'Steven'. works with strict comparison, no type coersion
+
+if (friends.includes('Peter')) {
+    console.log('You have a friend called Peter.');
+} else {
+    console.log("You don't have a friend called Peter");
+}
+
+*/
+
+//Introduction to Objects
+//arrays for ordered data, objects for more unstructured data that is named with the keys
+
+const eveArray = [                  //array
+    'Eve',
+    'McDermott',
+    2022 - 1986,
+    'programmer',
+    ['Andrea', 'Tanja', 'Kiri']
+];
+
+const eve = {                       //object
+    firstName: 'Eve',               //key: value
+    lastName: 'McDermott',
+    age: 2022 - 1986,
+    job: 'programmer',
+    friends: ['Andrea', 'Tanja', 'Kiri']    //this object has 5 properties
+}
+

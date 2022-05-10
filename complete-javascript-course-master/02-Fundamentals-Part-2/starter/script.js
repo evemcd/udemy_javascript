@@ -139,7 +139,6 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
-*/
 
 
 //Basic Array Operations (Methods)
@@ -167,3 +166,26 @@ if (friends.includes('Peter')) {
 } else {
     console.log("You don't have a friend called Peter");
 }
+
+*/
+
+//Introduction to Objects
+//arrays for ordered data, objects for more unstructured data that is named with the keys
+
+const eveArray = [                  //array
+    'Eve',
+    'McDermott',
+    2022 - 1986,
+    'programmer',
+    ['Andrea', 'Tanja', 'Kiri']
+];
+
+const eve = {                       //object
+    firstName: 'Eve',               //key: value
+    lastName: 'McDermott',
+    age: 2022 - 1986,
+    job: 'programmer',
+    friends: ['Andrea', 'Tanja', 'Kiri']    //this object has 5 properties
+}
+
+
