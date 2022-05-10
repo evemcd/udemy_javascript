@@ -227,4 +227,3 @@ console.log(eve);
 //"Eve has 3 friends and her best friend is called Tanja"
 console.log(eve.firstName + ' has ' + eve.friends.length + ' friends and her best friend is called ' + eve.friends[0]);
 console.log(`${eve.firstName} has ${eve.friends.length} friends and her best friend is called ${eve.friends[0]}.`);
-

@@ -224,7 +224,5 @@ eve['favourite food'] = 'cheese';
 console.log(eve);
 
 //challenge
-//"Eve has 3 friends and her best friend is called Tanja"
-console.log(eve.firstName + ' has ' + eve.friends.length + ' friends and her best friend is called ' + eve.friends[0]);
-console.log(`${eve.firstName} has ${eve.friends.length} friends and her best friend is called ${eve.friends[0]}.`);
-
+//"Eve has 3 friends and his best friend is called Tanja"
+console.log(object);

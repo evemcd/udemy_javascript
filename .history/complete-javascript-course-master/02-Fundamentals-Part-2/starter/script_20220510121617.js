@@ -195,7 +195,7 @@ const eve = {
     lastName: 'McDermott',
     age: 2022 - 1986,
     job: 'programmer',
-    friends: ['Tanja', 'Andrea', 'Kiri']
+    friends: ['Andrea', 'Tanja', 'Kiri']
 };
 
 console.log(eve);
@@ -218,13 +218,6 @@ if(eve[interestedIn]) {
     console.log('Wrong request. Choose between firstName, lastName, age, job, and friends.');
 }
 
-//add properties with dot and bracket notation
 eve.location = 'Germany';
-eve['favourite food'] = 'cheese';
+eve['favourite food'] = 'pasta';
 console.log(eve);
-
-//challenge
-//"Eve has 3 friends and her best friend is called Tanja"
-console.log(eve.firstName + ' has ' + eve.friends.length + ' friends and her best friend is called ' + eve.friends[0]);
-console.log(`${eve.firstName} has ${eve.friends.length} friends and her best friend is called ${eve.friends[0]}.`);
-
