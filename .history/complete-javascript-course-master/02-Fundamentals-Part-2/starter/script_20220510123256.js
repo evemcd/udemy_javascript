@@ -229,3 +229,5 @@ console.log(eve.firstName + ' has ' + eve.friends.length + ' friends and her bes
 console.log(`${eve.firstName} has ${eve.friends.length} friends and her best friend is called ${eve.friends[0]}.`);
 
 
+
+//CHALLENGE FOR DOT vs BRACKET NOTATION
