@@ -78,10 +78,6 @@ const myCountry = {
 
     describe: function() {
         return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`;
-    },
-
-    checkIsland: function() {
-        return this.isIsland = this.neighbours.length === 0 ? true : false;
     }
 };
 
@@ -96,6 +92,5 @@ myCountry['population'] -= 2;
 console.log(myCountry.population);
 
 //assignment 9 object methods
-//see object in assignment 7 - describe & checkIsland
+//see object in assignment 7 - describe
 console.log(myCountry.describe());
-console.log(myCountry.checkIsland());

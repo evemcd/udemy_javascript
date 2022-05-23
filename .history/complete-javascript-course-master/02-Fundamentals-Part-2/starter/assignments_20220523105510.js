@@ -81,7 +81,7 @@ const myCountry = {
     },
 
     checkIsland: function() {
-        return this.isIsland = this.neighbours.length === 0 ? true : false;
+        this.isIsland = this.neighbours.length === 0 ? true : false
     }
 };
 
@@ -97,5 +97,6 @@ console.log(myCountry.population);
 
 //assignment 9 object methods
 //see object in assignment 7 - describe & checkIsland
-console.log(myCountry.describe());
-console.log(myCountry.checkIsland());
+myCountry2.describe();
+myCountry2.checkIsland();
+console.log(myCountry2);
