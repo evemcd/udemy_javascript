@@ -266,5 +266,3 @@ console.log(eve.age);
 //"Eve is a 36 year old programmer and she has a/no driver's license"
 
 console.log(eve.getSummary());
-
-//arrays are special kinds of objects and use methods as well such as push or pop

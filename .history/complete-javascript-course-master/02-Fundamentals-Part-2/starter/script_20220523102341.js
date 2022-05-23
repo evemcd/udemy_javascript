@@ -252,10 +252,6 @@ const eve = {
     calcAge: function () {
         this.age = 2022 - this.birthYear;           //stores the value in this.age, creates a new property
         return this.age;
-    },
-
-    getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge()} year-old ${this.job} and she has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
     }
 };
 
@@ -264,7 +260,3 @@ console.log(eve.age);
 
 //challenge
 //"Eve is a 36 year old programmer and she has a/no driver's license"
-
-console.log(eve.getSummary());
-
-//arrays are special kinds of objects and use methods as well such as push or pop

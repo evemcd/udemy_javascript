@@ -240,31 +240,10 @@ const eve = {
     friends: ['Tanja', 'Andrea', 'Kiri'],
     hasDriversLicense: true,
 
-    // calcAge: function(birthYear) {              //function expression, inside an object is called a method
-    //     return 2022 - birthYear;
-    // }
-
-    // calcAge: function () {
-    //     console.log(this);                      //this refers to the object itself, this whole object will be logged
-    //     return 2022 - this.birthYear;
-    // }
-
-    calcAge: function () {
-        this.age = 2022 - this.birthYear;           //stores the value in this.age, creates a new property
-        return this.age;
-    },
-
-    getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge()} year-old ${this.job} and she has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+    calcAge: function(birthYear) {              //function expression, inside an object is called a method
+        return 2022 - birthYear
     }
 };
 
-console.log(eve.calcAge());
-console.log(eve.age);
-
-//challenge
-//"Eve is a 36 year old programmer and she has a/no driver's license"
-
-console.log(eve.getSummary());
-
-//arrays are special kinds of objects and use methods as well such as push or pop
+console.log(eve.calcAge(1986));
+console.log(eve['calcAge'](1986));

@@ -267,4 +267,4 @@ console.log(eve.age);
 
 console.log(eve.getSummary());
 
-//arrays are special kinds of objects and use methods as well such as push or pop
+//arrays are special kinds ob objects and use methods as well such as push or pop
